@@ -6,6 +6,15 @@
             .empty-right {
                 margin-right: 20px; /* Ändere die gewünschte Marge nach Bedarf */
             }
+            .empty-top {
+               height: 10px; /* Ändere die gewünschte Marge nach Bedarf */
+            }
+            .space {
+                height: 30px;
+            }
+            .space-less {
+                height: 20px;
+            }
         </style>
     </head>
     <header>
@@ -13,36 +22,41 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </header>
     <body class="container d-flex justify-content-center align-items-center bg-dark">
-        <div id="has-container" class="card">
+        <div>
+        <div class="space-less"></div>
+        <div id="heading" class="card">
+            <h2>Plugins and Tools</h2>
+        </div>
+        <div class="space"></div>
+        <div id="plugins-container" class="card">
             <div class="card-header">
-                <h1 id="Hide And Seek">Hide And Seek</h1>
+                <h1 id="plugins">Plugins</h1>
             </div>
 
             <div class="card-body">
-                <img src="bilder/HideAndSeek.png" alt="1" style="width:479px;height:230px;">
-                <h3>A plugin, that allows you to play Hide And Seek!</h3>
-            </div>
-
-            <div class="card-footer">
-                <a href="plugin-files/has-0.1.jar" class="btn btn-primary" id="download">Download</a>
+                <a href="plugin/msdl.html" class="btn btn-primary" id="download">Discord Link</a>
+                <br>
+                <div class="empty-top"></div>
+                <a href="plugin/hide-and-seek.html" class="btn btn-primary disabled" id="download">Hide And Seek</a>
+                <br>
+                <div class="empty-top"></div>
+                <a href="plugin/language-api.html" class="btn btn-primary disabled" id="download">Language Api</a>
+                <br>
+                <div class="empty-top"></div>
+                <a href="plugin/redstoneutil.html" class="btn btn-primary disabled" id="download">Redstone Util</a>
             </div>
         </div>
-        <div class="empty-right"></div>
-        <div id="msdl-container" class="card">
+        <div class="space"></div>
+        <div id="tools-container" class="card">
             <div class="card-header">
-                <h1 id="Minecraft Server Discord Link">Minecraft Server Discord Link</h1>
+                <h1 id="plugins">Tools</h1>
             </div>
 
             <div class="card-body">
-                <img src="bilder/MSDL.png" alt="1" style="width:488px;height:181px;">
-                <h3>A plugin, that allows you to link your minecraft and discord account!</h3>
-            </div>
-
-            <div class="card-footer">
-                <a href="plugin-files/msdl-1.0.jar" class="btn btn-primary" id="download">Download</a>
-                <a href="plugin/msdl.html" class="btn btn-primary" id="download">msdl</a>
+                <a href="plugin/msdl.html" class="btn btn-primary disabled" id="download">Get Paper</a>
             </div>
         </div>
+    </div>
     </body>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
