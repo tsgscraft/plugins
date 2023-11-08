@@ -5,6 +5,9 @@
         .space {
             height: 30px;
         }
+            .space-less {
+                height: 20px;
+            }
     </style>
 </head>
 <header>
@@ -13,16 +16,23 @@
 </header>
 <body class="container d-flex justify-content-center align-items-center bg-dark">
     <div>
-        <div class="space"></div>
+        <div class="space-less"></div>
+        <a href="../index.html" class="btn btn-danger" style="max-width:100%;width:80px;"><span class="align-items-left"></span> Zurück</a>
+        <div class="space-less"></div>
         <div id="msdl-container" class="card">
             <h2>Minecraft Server Discord Link</h2>
             <a href="plugin-files\msdl-1.0.jar" class="btn btn-primary" id="download">Download</a>
         </div>
         <div class="space"></div>
         <div id="msdl-container" class="card">
-            <a href="../index.html" class="btn btn-link"><span class="bi bi-chevron-left"></span> Zurück</a>
-            <h4>Minecraft Server Discord Link</h4>
+            <h4>This plugin connects to your discord account,</h4>
+            <h4>so that you can send messages from Minecraft</h4>
+            <h4> or upload structures on the server from discord!</h4>
             <img src="bilder/MSDL.png" alt="" style="max-width:100%;width:560px;">
+        </div>
+        <div class="space-less"></div>
+        <div>
+            <iframe src="https://discord.com/widget?id=1150097294142734416&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
     </div>
 </body>
